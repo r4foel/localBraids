@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', serif; 
+    background-color: #efefef;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #efefef;
+    z-index: 1000;
+    box-sizing: border-box;
+    padding-top: 34px;
+}
+.logo {
+    margin-top: -10px;
+    margin-left: 4rem;
+}
+.logo img {
+    width: 190px;
+}
+header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 4rem;
+}
+
+header li a {
+    color: #724334;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+header li a:hover {
+    background-color: #fff;
+    color: brown; 
+}
+
+header li .botao1 {
+    background-color: #724334;
+    color: #fff;
+}
+
+main {
+    max-width: 1440px;
+
+    
+}
+
+.container{
+    display: flex;
+}
+
+.filtros{
+    border-radius: 19px;
+    border: 3px solid #F81;
+    background: rgba(237, 231, 217, 0.00);
+    width: 25%;
+    height: 157px; 
+    margin-top: 200px;
+    margin-left: 55px;
+    padding-left: 59px;  
+    display: flex;  
+}
+
+.filtros h3{
+    width: 175px;
+    height: 26px;
+    flex-shrink: 0;
+    color: #804126;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;   
+    margin-left: 20px; 
+}
+
+.input-filtro{
+    width: 100%;
+    color: #474444;
+    background-color: #D9D9D9;
+    font-family: Poppins;
+    font-size: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+    font-weight: 500;
+    line-height: 120%; 
+    border: none;
+    
+}
+
+.filtros label{
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.left-coluna {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+.cat{
+    border-radius: 19px;
+    border: 3px solid #F81;
+    background: rgba(237, 231, 217, 0.00);
+    width: 125%;
+    height: 465px; 
+    margin-top: 160px;
+    padding-left: 59px;   
+    padding-bottom: 30px; 
+}
+
+.cat h3{
+    width: 175px;
+    height: 26px;
+    flex-shrink: 0;
+    color: #804126;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;   
+     
+}
+
+button{
+    border-radius: 51px;
+    background: #F81;
+    width: 79px;
+    height: 34px;
+    border: none;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 15px;
+}
+
+#container-especialista {
+    width: 170%; 
+    margin: 0 auto; 
+    border: 3px solid #F81; 
+    padding: 20px; 
+    height: 120%;
+    display: flex;
+    margin-left: 130%;
+    margin-bottom: 10%;
+    border-radius: 20px;
+}
+
+.redondo {
+    margin-left: 20px;
+ 
+}
+
+
+.button-agendamento {
+    padding: 10px 20px; 
+    background-color: #3498db;
+    color: white; 
+    border: none;
+    cursor: pointer; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+}
+
+
+#persona {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    display: flex;
+    
+}
+
+/* RESPONSIVO */
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #724334;
+    color: #fff;
+    display: flex;
+    font-weight: 200;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+footer ul {
+   width: 30%;
+    list-style-type: none;
+}
+
+footer li a {
+    width: 33%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+.logo-footer {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-footer img {
+    width: 150px;
+    margin-bottom: 20px;
+    margin-left: 4rem;
+}
+
+
+
+

@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap');
+
+html {
+    position: absolute;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', serif; 
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+   
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #efefef;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+.logo {
+    margin-left: 4rem;
+}
+
+.logo img {
+    width: 200px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    margin-top: 13px;
+    margin-right: 4rem;
+}
+
+
+#menu li a {
+    color: #724334;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#menu li a:hover {
+    background-color: #fff;
+    color: brown; 
+}
+
+#menu li .botao1 {
+    background-color: #724334;
+    color: #fff;
+}
+
+#btn-responsivo {
+    display: none;
+}
+
+
+/* IMAGEM */
+#imgprincipal {
+    position: absolute; 
+    right: 0;
+    top: 70px;
+    
+    
+    
+  }
+
+  #imgprincipal img {
+    max-width: 100%;
+    height: auto; 
+    
+  }
+
+  #titulosobrenos {
+   
+    position: relative; 
+    z-index: 1; 
+   padding-top: 30px;
+    
+  }
+  #titulosobrenos p {
+    font-size: 25px;
+    
+  }
+
+  .paragrafo2, #titulosobrenos h2 {
+    text-align: center;
+  }
+
+  /* PARAGRAFO */
+
+  .paragrafo {
+    width: 55%;
+    margin: 0 auto;
+    border: 2px solid #9F5320;
+    padding: 15px;
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    text-align: left;
+   
+    
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+ /* FORMULARIO */
+
+ #formulario {
+    position: relative; 
+    z-index: 1; 
+    width: 100%;
+    background-color: #F2F1F1;
+    height: 100%;
+    padding-bottom: 40px;
+ }
+
+ #formulario div {
+    margin-left: 20%;
+ }
+
+ .part1 {
+    margin-top: 40px;
+    display: flex;
+
+ }
+
+ .part1 input {
+    margin-right: 20px;
+    margin-bottom: 20px;
+ }
+
+ .part2 input {
+    margin-right: 20px;
+ }
+
+
+ .part2 {
+    
+margin-bottom: 20px;
+
+ }
+
+ 
+
+
+  input {
+  
+    padding: 5px;
+    width: 430px;
+    background-color: #F2F1F1;
+    border: 2px solid #DA9740;
+    border-radius: 5px;
+    font-size: 15px;
+   
+}
+
+ ::placeholder {
+    color: #000000;
+}
+textarea {
+
+    border: 2px solid #DA9740;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #F2F1F1;
+    width: 430px;
+    height: 170px;
+    padding: 5px;
+  
+  
+   
+}
+
+.part3 button {
+    background-color: #804126;
+    padding: 5px 10px;
+    color:#fff;
+    border: none;
+    border-radius: 14px;
+    margin-left: 20px;
+}
+    
+.part3 button:hover {
+    background-color: #fff;
+    color:#804126;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #724334;
+    color: #fff;
+    display: flex;
+    font-weight: 200;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+footer ul {
+   width: 30%;
+    list-style-type: none;
+}
+
+footer li a {
+    width: 33%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+.logo-footer {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-footer img {
+    width: 150px;
+    margin-bottom: 20px;
+    margin-left: 4rem;
+}
+
+/* RESPONSIVO */
+
+
+@media screen and (min-width: 320px) and (max-width:428px) {
+
+    .logo-footer img {
+        margin-left: 0;
+      }
+
+      .logo-footer {
+        width: 40%;
+        justify-content: center;
+  }
+
+    #menu li {
+        font-size: 1.2rem;
+        margin-top: .7rem;
+    }
+    
+    #btn-responsivo {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-right: 4rem;
+    }
+
+    .hamburger {
+        color: #000;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+
+    .hamburger::after,
+    .hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background: currentColor;
+        transition: .3s;
+        position: relative;
+    }
+
+    #menu.active .hamburger {
+       border-top-color: transparent;
+    }
+
+    #menu.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #menu.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    #menu.active ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        visibility: visible;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+
+
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        top: 58px;
+        right: 0;
+        left: 0;
+        height: 0px;
+        background-color: #efefef;
+        color: #724334;
+        transition: .6s ease;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #imgprincipal {
+        display: none;
+           
+      }
+
+    #formulario div {
+        margin-left: 10%;
+     }
+
+     .paragrafo {
+        width: 85%;
+        font-size: 20px;
+         
+       
+}
+
+input,textarea {
+  
+    
+    width: 90%;
+    }
+
+#titulosobrenos p {
+    
+    text-align: center;
+    margin-left: 0px;
+    font-size: 20px;
+
+}
+
+}
+
+@media screen and (min-width: 429px) and (max-width:767.9px) {
+
+    #menu li {
+        font-size: 1.2rem;
+        margin-top: .7rem;
+    }
+    
+    #btn-responsivo {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-right: 4rem;
+    }
+
+    .hamburger {
+        color: #000;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+
+    .hamburger::after,
+    .hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background: currentColor;
+        transition: .3s;
+        position: relative;
+    }
+
+    #menu.active .hamburger {
+       border-top-color: transparent;
+    }
+
+    #menu.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #menu.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    #menu.active ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        visibility: visible;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+
+
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        top: 58px;
+        right: 0;
+        left: 0;
+        height: 0px;
+        background-color: #efefef;
+        color: #724334;
+        transition: .6s ease;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #formulario div {
+        margin-left: 15%;
+     }
+
+     input,textarea {
+  
+    
+        width: 70%;
+        }
+
+     .paragrafo {
+        width: 65%;
+        font-size: 20px;
+        margin-right: 15%;        
+    
+}
+
+.logo-footer img {
+    margin-left: 0;
+  }
+
+  .logo-footer {
+    width: 40%;
+    justify-content: center;
+}
+
+.paragrafo2 {
+    text-align: left;
+    margin-left: 20%;
+}
+  
+#imgprincipal {
+    display: none;
+       
+  }
+
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width:834.9px) {
+
+    #menu li {
+        font-size: 1.2rem;
+        margin-top: .7rem;
+    }
+    
+    #btn-responsivo {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-right: 4rem;
+    }
+
+    .hamburger {
+        color: #000;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+
+    .hamburger::after,
+    .hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background: currentColor;
+        transition: .3s;
+        position: relative;
+    }
+
+    #menu.active .hamburger {
+       border-top-color: transparent;
+    }
+
+    #menu.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #menu.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    #menu.active ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        visibility: visible;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+
+
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        top: 58px;
+        right: 0;
+        left: 0;
+        height: 0px;
+        background-color: #efefef;
+        color: #724334;
+        transition: .6s ease;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #formulario div {
+        margin-left: 25%;
+     }
+
+     .paragrafo {
+        width: 70%;
+        font-size: 20px;
+        margin-right: 25%;        
+    
+}
+
+.paragrafo2 {
+    text-align: left;
+    margin-left: 5%;
+}
+  
+}
+
